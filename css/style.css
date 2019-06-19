@@ -1,0 +1,1562 @@
+@font-face {
+
+    font-family: 'AlegreyaSansSC-Regular';
+
+    src: url('../fonts/AlegreyaSansSC-Regular.eot');
+
+    src: url('../fonts/AlegreyaSansSC-Regular.eot?iefix') format('eot'),
+
+    url('../fonts/AlegreyaSansSC-Regular.woff') format('woff'),
+
+    url('../fonts/AlegreyaSansSC-Regular.ttf') format('truetype'),
+
+    url('../fonts/AlegreyaSansSC-Regular.otf') format('otf'),
+
+    url('../fonts/AlegreyaSansSC-Regular.svg#webfont') format('svg');
+}
+
+@font-face {
+
+    font-family: 'OpenSans';
+
+    src: url('../fonts/OpenSans.eot');
+
+    src: url('../fonts/OpenSans.eot?iefix') format('eot'),
+
+    url('../fonts/OpenSans.woff') format('woff'),
+
+    url('../fonts/OpenSans.ttf') format('truetype'),
+
+    url('../fonts/OpenSans.otf') format('otf'),
+
+    url('../fonts/OpenSans.svg#webfont') format('svg');
+}
+
+@font-face {
+
+    font-family: 'elmessiri-regular';
+
+    src: url('../fonts/elmessiri-regular.eot');
+
+    src: url('../fonts/elmessiri-regular.eot?iefix') format('eot'),
+
+    url('../fonts/elmessiri-regular.woff') format('woff'),
+
+    url('../fonts/elmessiri-regular.ttf') format('truetype'),
+
+    url('../fonts/elmessiri-regular.otf') format('otf'),
+
+    url('../fonts/elmessiri-regular.svg#webfont') format('svg');
+}
+
+@font-face {
+
+    font-family: 'Pacificoregular';
+
+    src: url('../fonts/Pacificoregular.eot');
+
+    src: url('../fonts/Pacificoregular.eot?iefix') format('eot'),
+
+    url('../fonts/Pacificoregular.woff') format('woff'),
+
+    url('../fonts/Pacificoregular.ttf') format('truetype'),
+
+    url('../fonts/Pacificoregular.otf') format('otf'),
+
+    url('../fonts/Pacificoregular.svg#webfont') format('svg');
+}
+
+@font-face {
+
+    font-family: 'Intro';
+
+    src: url('../fonts/Intro.eot');
+
+    src: url('../fonts/Intro.eot?iefix') format('eot'),
+
+    url('../fonts/Intro.woff') format('woff'),
+
+    url('../fonts/Intro.ttf') format('truetype'),
+
+    url('../fonts/Intro.otf') format('otf'),
+
+    url('../fonts/Intro.svg#webfont') format('svg');
+}
+
+
+.navbar-default{
+	opacity: 1;
+}
+
+.navbar-default1{
+	opacity: 1;
+}
+
+.navbar-default1 .container{
+	width: 770px;;
+}
+
+
+.navbar {
+	font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.nav > li > a {
+	font-family: Merriweather, Georgia, serif;
+	font-size: 12px;
+	color: #8f918f;
+}
+
+.nav > li > a:hover {
+    color: #94b393; 
+    text-decoration: underline; 
+}
+
+.header{
+	background: url(../img/Sydney_panorama1.jpg) top center;
+	height: 473px;
+	display: flex;
+justify-content: center;
+align-items: center;
+/*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+
+.header .img-header img{
+/*height: 200px;*/
+padding: 30px;
+}
+
+
+
+
+
+
+
+/* Çàäàåì ñáðîñ îáòåêàíèÿ */
+.clear {
+	margin-top: -1px;
+	height: 1px;
+	clear:both;
+	zoom: 1;
+}		
+/* Slider */
+.slider {
+	/* Øèðèíà êîíòåéíåðà */
+	/*width: 1200px;*/
+	/* Âíåøíèå òñòóïû ñâåðõó è ñíèçó */
+	/*margin: 50px auto;*/
+	/* Âíóòðåííèå îòñòóïû äëÿ ññûëîê navy */
+	/*padding: 0 30px;*/
+	/* Ïîçèöèîíèðîâàíèå */
+	position: relative;
+	overflow: hidden;
+    background: #f8f8f8;
+    padding-top: 20px;
+}
+.slider::-moz-selection { background: transparent; color: #fff; text-shadow: none; }
+.slider::selection { background: transparent; color: #fff; text-shadow: none; }
+
+.slide-list {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+.slide-wrap {
+	position: relative;
+	left: 0px;
+	top: 0;
+	width: 10000000px;
+}
+.slide-item {
+	width: 280px;
+	padding: 10px;
+	float: left;
+}
+.slide-title {
+	font: bold 16px monospace;
+	display: block;
+    color: #454545;
+}
+
+
+.navy {
+	position: absolute;
+	top: 14px;
+	z-index: 1;
+	height: 50px;
+	width: 50px;
+	margin: 75px 30px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.prev-slide {
+	left: 0;
+	background: #ffffff url(bg/left-arrow.png) 11px 40% no-repeat;
+}
+.next-slide {
+	right: 0;
+	background: #ffffff url(bg/right-arrow.png) 13px 40% no-repeat;
+}
+.navy.disable {
+	background: #dbdbdb;
+}
+
+.auto {
+	width: 7px;
+	height: 11px;
+	cursor: pointer;
+	margin: 10px auto;
+}
+.play {
+	background: url(bg/play.png) center no-repeat;
+}
+.pause {
+	background: url(bg/pause.png) center no-repeat;
+}
+
+.slider img{
+	max-width: 100%;
+    height: auto;
+    border: none;
+    display: inline-block;
+}
+
+ .navbar .navbar-nav{
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.top-menu-2 {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.content-block-and-sidebar{
+    background: #f8f8f8;
+}
+
+hr {
+    border-color: #ccc;
+}
+
+.trend-post h4 {
+    text-align: center;
+    font-weight: 900;
+    color: #454545;
+    font-size: 16px;
+    font-family: 'OpenSans';
+    padding: 0 2px;
+}
+
+.trend-post span {
+    display: block;
+    text-align: center;
+    font-weight: 900;
+    color: #b1b1b1;
+    font-size: 13px;
+    font-family: 'elmessiri-regular';
+    padding: 0 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.header-post h2 {
+    text-align: center;
+    font-weight: 900;
+    color: #454545;
+    font-size: 26px;
+    font-family: 'OpenSans';
+    padding: 0 2px;
+}
+
+.bottom-post h2 {
+    text-align: center;
+    font-weight: 900;
+    color: #454545;
+    font-size: 23px;
+    font-family: 'OpenSans';
+    padding: 0 2px;
+}
+
+.header-post-span span {
+    margin: 0 auto font-weight: 900;
+    color: #b1b1b1;
+    font-size: 15px;
+    font-family: 'elmessiri-regular';
+    padding: 0 2px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.header-post-span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-post p {
+    color: #6c6c6c;
+    font-size: 15.5px;
+    line-height: 1.6;
+    padding: 2px 35px 5px 35px;
+    text-align: justify;
+}
+
+.bottom-post p {
+    color: #6c6c6c;
+    font-size: 15.5px;
+    line-height: 1.6;
+    padding: 2px 25px 5px 25px;
+    /*text-align: justify;*/
+}
+
+
+
+/*Декаративный разделитель*/
+
+hr.separator:after {
+    background: none repeat scroll 0% 0% #fff;
+    border-bottom-style: 1px dotted #e2e2e2;
+    box-shadow: 0 0 1px #989898;
+    content: "";
+    height: 7px;
+    left: 50%;
+    margin: -4px auto auto -4px;
+    position: absolute;
+    transform: rotate(-45deg);
+    width: 7px;
+}
+
+hr.separator {
+    border-top: 1px dotted #e2e2e2;
+    width: 8%;
+    clear: both;
+    margin-bottom: 30px;
+}
+
+
+/*Декаративный разделитель*/
+
+
+/* Обрезка фото */
+
+.img-size img {
+    /*width: 170px;*/
+    height: 170px;
+    object-fit: cover;
+}
+
+.img-big {
+    object-fit: cover;
+}
+
+
+/* Обрезка фото */
+
+
+/* Обрезка фото основного блока*/
+
+.img-size-2 img {
+    width: auto;
+    height: 275px;
+    object-fit: cover;
+}
+
+
+
+
+/* Обрезка фото основного блока*/
+
+
+/* Пунктирная линия до и после текста */
+
+.title-h3 {
+    /* Чтобы спрятать часть линий, которые 
+    ** будут вылазить за пределы блока */
+    overflow: hidden;
+    /* Выравнивание заголовка по центру, 
+    ** можно использовать left, right */
+    text-align: center;
+    /* Тут можно добавить другие стили для заголовка */
+    font-size: 30px;
+    margin: 10px 15px 20px 15px;
+}
+
+.title-h3 h3 {
+    /* Стили тега обертки для заголовков 
+    ** в несколько строк */
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'AlegreyaSansSC-Regular';
+    font-weight: 900;
+    color: #434544;
+}
+
+.title-h3:before,
+.title-h3:after {
+    /* Обязательно указываем пустое свойство content, 
+    ** иначе псевдоэлементы не появятся на сайте */
+    content: "";
+    /* Указываем что наши линии будут строчно-блочные и 
+    ** выравнивание по высоте - по центру */
+    display: inline-block;
+    vertical-align: middle;
+    /* Задаем ширину 100% и выбираем высоту линии, 
+    ** в нашем примере она равна 4 пикселям */
+    width: 100%;
+    height: 3px;
+    /* Добавляем цвет для линии */
+    background-color: #e1e1e1;
+    /* Добавляем пседоэлемантам возможность изменить 
+    ** позицию линии, для создания отступов от текста */
+    position: relative;
+    border-bottom-style: dotted;
+    border-bottom-color: #f8f8f8;
+}
+
+.title-h3:before {
+    /* Смещаем левую линию на 100% влево, чтобы линия 
+    ** встала рядом с текстом слева */
+    margin-left: -100%;
+    /* Указываем в пикселях отступ линии от текста заголовка */
+    left: -2px;
+}
+
+.title-h3:after {
+    /* Смещаем правую линию на 100% вправо, чтобы 
+    ** линия встала рядом с текстом справа */
+    margin-right: -100%;
+    /* Указываем в пикселях отступ линии от текста заголовка */
+    right: -2px;
+}
+
+
+
+
+/* Пунктирная линия до и после текста */
+
+
+/*Дизайн неактивной кнопки раздела категории*/
+
+.sub-main {
+    text-align: center;
+}
+
+.button-three {
+    position: relative;
+    background-color: #f0b310;
+    border: none;
+    margin-top: 30px;
+    padding: 4px 10px;
+    /*width: 75px;*/
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    font-family: 'OpenSans';
+    font-weight: 900;
+    font-size: 12px;
+    color: #fff;
+    text-shadow: grey 0 0 2px;
+}
+
+.button-three:hover {
+    background: #d38e09;
+    /*box-shadow:0px 2px 5px 3px #97B1BF;*/
+    color: #fff;
+}
+
+
+/*Дизайн неактивной кнопки раздела категории*/
+
+
+/*Дизайн кнопки далее*/
+
+.button-2 {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    padding: 12px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    font-family: 'OpenSans';
+    font-weight: 900;
+    font-size: 14px;
+    color: #afafaf;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.button-2:hover {
+    background: #f39c12;
+    box-shadow: 0px 2px 5px 3px #afafaf;
+    color: #fff;
+    text-shadow: grey 0 0 2px;
+}
+
+.button-2:after {
+    content: "";
+    background: #f1c40f;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button-2:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+
+/*Дизайн кнопки далее*/
+
+
+/*Маржин для того чтобы посты не были одинаковые по ширине и не разъехались при добавлении ещё одного row*/
+
+.bottom-post {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+
+/*Маржин для того чтобы посты не были одинаковые по ширине и не разъехались при добавлении ещё одного row*/
+
+
+/*Кнопки социальных сетей в постах*/
+
+.margin-span {
+    padding: 5px 0 25px 25px;
+}
+
+.fa-share-alt {
+    padding-right: 5px;
+    color: #b0b0b0;
+}
+
+.bottom-post .fa-vk,
+.fa-odnoklassniki-square,
+.fa-twitter,
+.fa-facebook-official,
+.fa-google-plus-square {
+    font-size: 19px;
+    padding-left: 6px;
+    color: #454545;
+}
+
+.bottom-post .fa-vk:hover {
+    color: #4c75a3;
+}
+
+.bottom-post .fa-odnoklassniki-square:hover {
+    color: #f0b310;
+}
+
+.bottom-post .fa-twitter:hover {
+    color: #00aced;
+}
+
+.bottom-post .fa-facebook-official:hover {
+    color: #3b5998;
+}
+
+.bottom-post .fa-google-plus-square:hover {
+    color: #d44132;
+}
+
+.text-span-bold {
+    font-size: 15px;
+    font-family: 'elmessiri-regular';
+    font-weight: 600;
+    color: #b0b0b0;
+}
+/*Кнопки социальных сетей в постах*/
+
+
+/*Картинка фиксированного заднего фона в футоре*/
+.footer-subscribe {
+    background-attachment: fixed;
+    background-image: url(../img/c1dd3cc4c80b69ece48bd4258ac844fe1.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+}
+/*Картинка фиксированного заднего фона в футоре*/
+
+
+.footer-subscribe-2{
+    height: 525px;
+}
+
+
+/*Стили для первого элемента сайтбара "Автор"*/
+.side-bar .col-sm-12{
+    padding-left: 0; 
+    padding-right: 0; 
+}
+
+.autor{ 
+    text-align: center;
+    padding-bottom: 35px;
+    padding-top: 25px;
+}
+
+.autor img{
+    padding-right: 30px;
+    padding-left: 30px; 
+}
+
+.side-bar h4{
+    text-align: center;
+    font-family: 'OpenSans';
+    font-size: 19px;
+    font-weight: 900;
+    color: #505b5d;
+}
+
+.side-bar h5{
+    text-align: center;
+    font-family: 'OpenSans';
+    font-size: 16px;
+    font-weight: 900;
+    color: #505b5d;
+    margin-top: 20px;
+}
+
+.autor p{
+    text-align: left;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: #6c6c6c;
+    font-size: 15.5px;
+    line-height: 1.6;
+}
+
+.autor span{
+    font-family: 'Pacificoregular';
+    font-size: 18px;
+    color: #505b5d;
+    padding-bottom: 36px;
+}
+
+.autor .span-left{
+    padding-right: 40px;
+}
+
+.autor .span-right{
+    padding-left: 40px;
+}
+/*Стили для первого элемента сайтбара "Автор"*/
+
+/*Декаративный разделитель сайтбара*/
+
+.side-bar hr.separator:after {
+    background: none repeat scroll 0% 0% #fff;
+    border-bottom-style: 1px dotted #e2e2e2;
+    box-shadow: 0 0 1px #989898;
+    content: "";
+    height: 7px;
+    left: 50%;
+    margin: -4px auto auto -4px;
+    position: absolute;
+    transform: rotate(-45deg);
+    width: 7px;
+}
+
+.side-bar hr.separator {
+    border-top: 1px dotted #e2e2e2;
+    width: 18%;
+    clear: both;
+    margin-bottom: 30px;
+}
+
+/*Декаративный разделитель сайтбара*/
+
+
+/*Оформление раздела популярные статьи в сайтбаре*/
+.popular-post{ 
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 25px;
+}
+
+.popular-post img{
+    width: 130px;
+    height: 70px;
+    padding-left: 30px;
+    margin-right: 15px;
+    float:left;
+}
+
+.popular-post p{
+    text-align: left;
+    padding-right: 30px;
+    font-size: 14px;
+    font-family: 'OpenSans';
+    font-weight: 900;
+    color: #454545;
+    line-height: 1.3;
+    margin-bottom: 5px;
+}
+
+.popular-post span{
+    display: block;
+    text-align: left;
+    font-style: italic;
+    font-size: 14px;
+    color: #454545;
+    text-decoration: none; 
+}
+
+.popular-post span:hover{
+    color: #f0b310;
+    text-decoration: none; 
+}
+.popular-post-item {
+    height: 80px;
+    margin-bottom: 20px;
+    clear: both; 
+}
+/*Оформление раздела популярные статьи в сайтбаре*/
+
+
+/*Оформление кнопок социальных сетей в сайтбаре*/
+.social-media ul {
+    padding:0;
+    list-style: none;
+}
+..social-media {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
+
+.social-media .fa {
+    color: #fff;
+}
+.social-icon {
+    color: #fff;
+}
+.social-media ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.social-media .fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.social-media .fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.social-media .fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.social-media .fa-twitter:hover {
+    background-color: #00aced;
+}
+.social-media .fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.social-media .fa-rss:hover {
+    background-color: #eb8231;
+}
+
+.social-media .fa-odnoklassniki-square {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.social-media .fa-odnoklassniki-square:hover {
+    background-color: #eb8231;
+}
+
+.social-media .fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.social-media .fa-youtube:hover {
+    background-color: #e64a41;
+}
+.social-media .fa-vk {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.social-media .fa-vk:hover {
+    background-color: #4c75a3;
+}
+.social-media .fa-google-plus {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.social-media .fa-google-plus:hover {
+    background-color: #e25714;
+}
+
+/*Оформление кнопок социальных сетей в сайтбаре*/
+
+/*Форма рассылки*/
+.subscribe {
+  /*max-width: 1170px;*/
+  /*width: 100%;*/
+  /*margin: 90px auto 124px auto;*/
+  /*padding: 0 15px;*/
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe h1 {
+  text-align: center;
+  font-family: 'Intro';
+  /*font-weight: 900;*/
+  font-size: 27px;
+  line-height: 52px;
+  margin-bottom: 0px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.subscribe h2 {
+  text-align: center;
+  font-family: 'elmessiri-regular';
+  /*font-weight: 900;*/
+  font-size: 21px;
+  color: #fff;
+  margin-bottom: 18px;
+  margin-top: 0px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.subscribe p {
+  text-align: center;
+  font-size: 12;
+  line-height: 24px;
+  color: #8c8f94;
+  font-weight: 400;
+}
+
+.form {
+  max-width: 460px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  line-height: 24px;
+  height: 28px;
+  /*border: 1px solid #26292c;*/
+  border-radius: 28px;
+  margin-top: 3px;
+  margin-bottom: 4px;
+  padding: 26px;
+  margin-bottom: 28px;
+  background: #fff;
+}
+
+.form__input {
+  position: absolute;
+  top: 15px;
+  border: none;
+  font-size: 16px;
+  color: #26292c;
+  width: 70%;
+  font-weight: 400;
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__button {
+  position: absolute;
+  right: 5px;
+  top: 4px;
+  color: #ffffff;
+  background-color: #f0b310;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 32px;
+  transform: capitalize;
+  font-weight: 400;
+  font-size: 18px;
+  text-shadow: grey 0 0 2px;
+}
+
+.button:focus {
+  outline: none;
+}
+/*Форма рассылки*/
+
+
+/*Виджет инстаграм*/
+.footer-instagram{
+    text-align: center;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+      
+}
+
+.footer-instagram h4{
+    font-family: 'OpenSans';
+    font-size: 19px;
+    font-weight: 900;
+    color: #505b5d;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+/*Виджет инстаграм*/
+
+.footer-social-buttom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 45px;
+  font-family: 'OpenSans';
+}
+
+
+
+#popupContainer {
+  display:none;
+  box-sizing:border-box;
+  width:560px; padding:30px 40px;
+  position:fixed; left:50%; z-index:10000; margin-left:-280px;
+  background:#ECF0F1;
+}
+#popupInnercontainer {
+  position:relative;
+  font:normal normal 16px 'Open Sans', sans-serif;
+}
+#popupClose {
+  position:absolute; right:0; top:0;
+  font-size:20px; color:#22313F;
+  cursor:pointer;
+}
+
+#popupSocialbuttoncontainer {margin:0 auto; padding:0;}
+#popupSocialbuttons {overflow:hidden;}
+.popupSocialbutton {
+  background:#DCE0E0;
+  position:relative;
+  float:left;
+  height:40px; width:150px;
+  margin:5px;
+  overflow:hidden;
+  border-radius:3px;
+}
+.popupSocialicon {
+  float:left;
+  width:38px; height:100%;
+  border-radius:3px 0px 0px 3px;
+  text-align:center;
+}
+.popupSocialicon i.fa {color:#fff; line-height:42px;}
+
+.popupSocialslide {
+  height:100%; width:112px;
+  position:absolute; right:0; top:0; z-index:2;
+  text-align:center;
+  border-radius:0 3px 3px 0;
+  transition:all 0.2s ease-in-out;
+}
+.popupSocialslide p {
+  font:normal 400 16px/1.5 'Open Sans', sans-serif; color:#fff;
+  border-left:1px solid #ccc;
+  margin-top:8px;
+}
+
+.popupSocialcount {
+  height:100%; width:112px;
+  position:absolute; right:0; top:0; z-index:1;
+  border-radius:0 3px 3px 0;
+  text-align:center;
+}
+.popupSocialcount iframe {margin:10px!important;}
+
+.popupSocialbutton:hover .popupSocialslide {right:-112px;}
+
+.popupSocial-facebook .popupSocialicon, .popupSocial-facebook .popupSocialslide {background:#305c99;}
+.popupSocial-twitter .popupSocialicon, .popupSocial-twitter .popupSocialslide {background:#00cdff;}
+.popupSocial-google .popupSocialicon, .popupSocial-google .popupSocialslide {background:#d24228;}
+
+#popupSharecontainer {}
+
+/*---Popup Msg---*/
+.popupMsg {margin-bottom:20px; color:#22313F;}
+.popupMsgheader {font-size:1.5em;}
+.popupMsgsubheader {font-size:1em;}
+.subscribeField {
+  border-bottom:1px solid #22313F;
+  margin:20px auto;
+}
+.subscribeField i.fa {
+  color:#22313F; margin-right:9px;
+}
+input {
+  font:normal normal 16px/1.6em 'Open Sans', sans-serif; color:#22313F;
+  border:none; outline:none;
+}
+.field {
+  width:450px; height:45px;
+  background:rgba(0,0,0,0);
+}
+#subbutton {
+  width:250px; height:45px;
+  display:block;
+  margin:50px auto 0;
+  background:#27ae60;
+  cursor:pointer;
+}
+
+#popupSeparator {
+  font-size:1.2em; color:#22313F;
+  text-align:center;
+  margin:30px 0;
+  position:relative;
+}
+#popupSeparator:before, #popupSeparator:after {
+  content:'';
+  position:absolute; top:50%;
+  width:45%; height:1px;
+  background:#bbb;
+}
+#popupSeparator:before {left:0;}
+#popupSeparator:after {right:0;}
+
+#popupOverlay {
+  width:100%; height:100%;
+  position:fixed; left:0; top:0;
+  z-index:9999;
+  background:rgba(0,0,0,0.5);
+  display:none;
+}
+
+
+.footer-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #252525;
+  padding: 50px;
+}
+
+.footer-menu img{
+  width: 400px;
+}
+
+
+
+/*Кнопка Like на карточке с контентом*/
+
+input[type=checkbox] {
+    clear: both;
+    display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+    /*position: absolute;*/
+    z-index: 100;
+    /*overflow: hidden;*/
+    height: 2.3em;
+    width: 2.3em;
+    left: calc(50% - 3em);
+    top: calc(50% - 3em);
+    display: block;
+    text-align: center;
+    line-height: 33px;
+    cursor: pointer;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    /*border-radius: 50%;*/
+    background-color: #f0b310;
+}
+
+input[type="checkbox"] + label:before {
+    content: '';
+    z-index: -1;
+    /*position: absolute;*/
+    background: red;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+}
+
+input[type="checkbox"] + label:after {
+    content: '';
+    z-index: -1;
+    /*position: absolute;*/
+    background: #f0b310;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+}
+
+input[type="checkbox"]:checked + label svg {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    /*fill: red;*/
+    fill: white;
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+}
+
+label svg {
+    display: inline-flex;
+    vertical-align: middle;
+    width: 16px;
+    fill: #f0b310;
+    stroke: #fff;
+    stroke-width: 2;
+}
+
+.triangle{
+   content: ''; 
+   position: absolute;
+   top: 32px;
+   border: 4px solid transparent;   
+   border-top: 4px solid grey; 
+   border-right: 4px solid grey;
+}
+
+.triangle-2{
+   content: ''; 
+   position: absolute;
+   top: 32px;
+   border: 3.5px solid transparent;   
+   border-top: 3.5px solid grey; 
+   border-right: 3.5px solid grey;
+}
+
+.like{
+   z-index: 1000;
+   position: absolute;
+   left: 9px;
+   top: 30px;
+}
+
+/*Кнопка Like на карточке с контентом*/
+
+/*Блоки одинаковой высоты в разделе Популярные статьи*/
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class*="col-"] {
+  margin-bottom: 15px;
+}
+
+.content {
+  height: 100%;
+  padding: 20px 20px 10px;
+  color: #fff;
+}
+/*Блоки одинаковой высоты в разделе Популярные статьи*/
+
+/*Пагинация*/
+.pagination-2{
+    text-align: center;
+}
+#pagination {
+    display: inline-block;
+    vertical-align: middle;
+    /*width: 100%;*/
+    border-radius: 50px;
+    padding: 1px 2px 4px 2px;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    background: #fff;
+    background-color: #f5f4f4;
+    /*background-image: -webkit-linear-gradient(top, #DBDBDB, #E2E2E2);
+    background-image:    -moz-linear-gradient(top, #DBDBDB, #E2E2E2);
+    background-image:     -ms-linear-gradient(top, #DBDBDB, #E2E2E2);
+    background-image:      -o-linear-gradient(top, #DBDBDB, #E2E2E2);
+    background-image:         linear-gradient(top, #DBDBDB, #E2E2E2);*/
+}
+#pagination a, #pagination i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    color: #7D7D7D;
+    text-align: center;
+    font-size: 20px;
+    padding: 8px 0 6px 0;
+    -webkit-user-select:none;
+       -moz-user-select:none;
+        -ms-user-select:none;
+         -o-user-select:none;
+            user-select:none;
+}
+
+#pagination a {
+    margin: 0 2px 0 2px;
+    border-radius: 50px;
+    border: 1px solid #E3E3E3;
+    cursor: pointer;
+    box-shadow: inset 0 1px 0 0 #FFF, 0 1px 2px #666;
+    text-shadow: 0 1px 1px #FFF;
+    background-color: #E6E6E6;
+    background-image: -webkit-linear-gradient(top, #F3F3F3, #eee);
+    background-image:    -moz-linear-gradient(top, #F3F3F3, #eee);
+    background-image:     -ms-linear-gradient(top, #F3F3F3, #eee);
+    background-image:      -o-linear-gradient(top, #F3F3F3, #eee);
+    background-image:         linear-gradient(top, #F3F3F3, #eee);
+}
+#pagination i {
+    margin: 0 3px 0 3px;
+}
+/*#pagination a.current {
+    border: 1px solid #E9E9E9;
+    box-shadow: 0 1px 1px #999;
+    background-color: #DFDFDF;
+    background-image: -webkit-linear-gradient(top, #D0D0D0, #EBEBEB);
+    background-image:    -moz-linear-gradient(top, #D0D0D0, #EBEBEB);
+    background-image:     -ms-linear-gradient(top, #D0D0D0, #EBEBEB);
+    background-image:      -o-linear-gradient(top, #D0D0D0, #EBEBEB);
+    background-image:         linear-gradient(top, #D0D0D0, #EBEBEB);
+}*/
+
+#pagination a.current {
+    border: 1px solid #fff;
+    box-shadow: 0 1px 2px #82632c;
+    background-color: #f0b310;
+    color: #eee;
+    background-image: -webkit-linear-gradient(top, #d29a03, #d29a03);
+    background-image:    -moz-linear-gradient(top, #d29a03, #d29a03);
+    background-image:     -ms-linear-gradient(top, #d29a03, #d29a03);
+    background-image:      -o-linear-gradient(top, #d29a03, #d29a03);
+    background-image:         linear-gradient(top, #d29a03, #d29a03);
+}
+/*Пагинация*/
+
+
+.content-block-and-sidebar-article{
+   padding-top: 30px; 
+}
+
+.article-post h1 {
+    text-align: center;
+    font-weight: 900;
+    color: #454545;
+    font-size: 40px;
+    font-family: 'OpenSans';
+    padding: 0 2px;
+    margin: 10px;
+}
+
+.article-post p {
+    color: #6c6c6c;
+    font-size: 15.5px;
+    line-height: 1.6;
+    padding: 2px 15px 5px 15px;
+}
+
+.article-post h2 {
+    padding: 0px 15px 0px 15px;
+}
+
+.article-post img {
+    padding-bottom: 25px;
+}
+
+.button-three-article{
+        position: relative;
+    background-color: #f0b310;
+    border: none;
+    padding: 4px 10px;
+    /* width: 75px; */
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    font-family: 'OpenSans';
+    font-weight: 900;
+    font-size: 12px;
+    color: #fff;
+    text-shadow: grey 0 0 2px;
+}
+
+.button-three-article:hover {
+    background: #d38e09;
+    /*box-shadow:0px 2px 5px 3px #97B1BF;*/
+    color: #fff;
+}
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+     
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+    	
+     
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+        
+    }
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+      .img-size img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+}
+    .img-size-2 img{
+    height: auto;
+}
+
+.popular-post img {
+    padding-left: 20px;
+    width: 110px;
+    height: 55px;
+    margin-bottom: 27px
+}
+
+.popular-post p{
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.social-media .fa-vk, .social-media .fa-odnoklassniki-square, .social-media .fa-facebook, .social-media .fa-twitter, .social-media .fa-rss, .social-media .fa-youtube, .social-media .fa-google-plus{
+    padding: 8px 11px;
+}
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+      .img-size img {
+    width: auto;
+    height: 170px;
+    object-fit: cover;
+}
+.img-size-2 img{
+    height: auto;
+}
+
+.popular-post img {
+    padding-left: 40px;
+    width: 190px;
+    height: 100px;
+    margin-bottom: 40px
+}
+
+.popular-post p{
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.social-media .fa-vk, .social-media .fa-odnoklassniki-square, .social-media .fa-facebook, .social-media .fa-twitter, .social-media .fa-rss, .social-media .fa-youtube, .social-media .fa-google-plus{
+    padding: 10px 14px;
+}
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+          .top-menu .navbar{
+     	display: none;
+     }
+
+
+    .navbar .navbar-nav{
+        display: block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .top-menu-2 {
+        text-align: left;
+        width: 100%;
+    }
+
+    .trend-post{
+    display: none;
+     }
+
+     .slider{
+    display: none;
+     }
+
+     .header-post{
+      padding-top: 30px;
+     }
+     .bottom-post img{
+      height: auto;
+     }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+     .subscribe h1 {
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 0px;
+    
+  }
+
+  .subscribe h2 {
+    font-size: 22px;
+    line-height: 26px;
+}
+  .form__button{
+        position:absolute;
+        top:65px;
+        left: 2px;
+        width:99%;
+    }
+    
+    .form{
+        position:relative;
+    }
+    
+    .subscribe p{
+        
+        margin-top:60px;
+    }
+
+   .header{
+    height: 300px;
+   }
+
+   .popular-post img {
+    padding-left: 30px;
+    width: 130px;
+    height: 70px
+    /*margin-bottom: 27px*/
+}
+
+.popular-post p{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 400px) {
+    .header{
+    height: 250px;
+   }
+
+   .popular-post img {
+    padding-left: 20px;
+    width: 110px;
+    height: 55px;
+    margin-bottom: 27px
+}
+
+.popular-post p{
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.social-media .fa-vk, .social-media .fa-odnoklassniki-square, .social-media .fa-facebook, .social-media .fa-twitter, .social-media .fa-rss, .social-media .fa-youtube, .social-media .fa-google-plus{
+    padding: 8px 11px;
+}
+    }
